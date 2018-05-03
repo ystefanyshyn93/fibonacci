@@ -25,12 +25,11 @@ document.write(fibonacci(n-1) + fibonacci(n-2));*/
 
 
 
-
 const n = parseFloat(prompt('Введіть число', ''));
 
 function fibonacci(n) {
-    var a = 1,
-     b = 1;
+    let a = 1,
+    b = 1;
   for (let i = 3; i <= n; i++) {
     const c = a + b;
     a = b;
@@ -39,6 +38,5 @@ function fibonacci(n) {
   return b;
 }
 document.write(fibonacci(n));
-
 
 
