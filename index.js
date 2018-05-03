@@ -20,6 +20,7 @@ function fibonacci (n) {
     else {
         return (fibonacci(n-1) + fibonacci(n-2));
     }
+    
 }
 document.write(fibonacci(n-1) + fibonacci(n-2));*/
 
@@ -28,10 +29,11 @@ document.write(fibonacci(n-1) + fibonacci(n-2));*/
 const n = parseFloat(prompt('Введіть число', ''));
 
 function fibonacci(n) {
-    let a = 1,
-    b = 1;
-  for (let i = 3; i <= n; i++) {
-    const c = a + b;
+    let a =1;
+    let b = 1;
+    let c;
+    for (let i = 3; i <= n; i++) {
+    c = a + b;
     a = b;
     b = c;
   }
